@@ -1,6 +1,6 @@
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Calendar } from '@/components/ui/calendar';
+import { Input } from "../ui/input";
+import { Button } from "../ui/button";
+import { Calendar } from '../ui/calendar';
 import { useState } from "react";
 import Navigation from "../popUps/Navigate";
 import EditReservation from "../popUps/editReservation";

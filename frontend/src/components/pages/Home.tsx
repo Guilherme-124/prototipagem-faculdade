@@ -1,6 +1,6 @@
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import Calendario from "@/components/Calendario/Calendar";
+import { Input } from "../ui/input";
+import { Button } from "../ui/button";
+import Calendario from "../Calendario/Calendar";
 import { useEffect, useMemo, useState } from "react";
 import EditReservation from "../popUps/editReservation";
 import NewReservation from "../popUps/newReservation";
@@ -45,7 +45,7 @@ function Home({ admin }: { admin: boolean }) {
     "06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00",
     "14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"
   ];
-  
+
   const salas = ["Sala 1", "Sala 2", "Sala 3"];
 
   const reservasPorHora = times.map((time) => ({
