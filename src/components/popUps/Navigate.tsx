@@ -10,21 +10,21 @@ function Navigation() {
       >
         <div className="flex flex-col">
 
-          <NavLink to={"/"}
+          <NavLink to={"/prototipagem-faculdade/"}
             className="px-4 py-2 text-left hover:bg-gray-100"
           >
             <button>
               Home
             </button>
           </NavLink>
-          <NavLink to={"/reunioesdia"}
+          <NavLink to={"/prototipagem-faculdade/reunioesdia"}
             className="px-4 py-2 text-left hover:bg-gray-100"
           >
             <button>
               Reuniões do dia
             </button>
           </NavLink>
-          <NavLink to={"/reuniaosemana"}
+          <NavLink to={"/prototipagem-faculdade/reuniaosemana"}
             className="px-4 py-2 text-left hover:bg-gray-100"
           >
             <button>

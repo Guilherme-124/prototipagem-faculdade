@@ -26,14 +26,14 @@ export default function PerfilEdit() {
         {/* Buttons */}
         <div className="flex gap-4">
           <button
-            onClick={() => navigate("/perfil")}
+            onClick={() => navigate("/prototipagem-faculdade/perfil")}
             className="h-8 px-6 border rounded"
           >
             Salvar
           </button>
 
           <button
-            onClick={() => navigate("/perfil")}
+            onClick={() => navigate("/prototipagem-faculdade/perfil")}
             className="h-8 px-6 border rounded"
           >
             Cancelar

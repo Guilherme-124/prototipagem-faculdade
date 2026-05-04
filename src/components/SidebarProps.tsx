@@ -89,20 +89,18 @@ export default function Sidebar({children}: SidebarProps) {
           ${focus || pin ? "w-60 opacity-100" : "w-12 opacity-100"}
         `}>
           <nav className="flex flex-col h-screen">
-            <div className={`mx-2 py-2 flex top-0 bg-white justify-between
+            <div className={`mx-[5px] py-2 flex top-0 bg-white justify-between
               border-b border-gray-400 overflow-hidden`}
             >
-              <NavLink to={"/"}>
+              <NavLink to={"/prototipagem-faculdade/"}>
                 <div className="flex items-center cursor-pointer">
-                  <img 
-                    src="/src/assets/img/moonshot-ai-icon.svg" 
-                    alt="fishboard Icon" 
-                    className="h-8 w-8 flex-shrink-0"  
-                  />
-                    <div className={`px-2 overflow-hidden transition-all duration-900 ease-in-out
-                      ${focus ? "ml-[1px] max-w-56" : "max-w-0"}`}
+                  <div className="font-bold">
+                    RBA
+                  </div>
+                    <div className={`px-1 overflow-hidden transition-all duration-900 ease-in-out
+                      ${focus ? "ml-[2px] max-w-56" : "max-w-0"}`}
                     >
-                      <span className={`font-semibold ${focus ? "lex" : "hidden"}`}>RBA</span>
+                      <span className={`font-semibold ${focus ? "lex" : "hidden"}`}>Comunicações</span>
                     </div>             
                 </div>
               </NavLink>
@@ -128,7 +126,7 @@ export default function Sidebar({children}: SidebarProps) {
                 {children}
               </ul>
               <div className={`border-t border-gray-300 mt-auto py-1 mx-2`}>
-                <NavLink to={"/login"}>
+                <NavLink to={"/prototipagem-faculdade/login"}>
                   <div 
                     className={`inline-flex items-center py-1 rounded-lg 
                       cursor-pointer hover:bg-gray-200

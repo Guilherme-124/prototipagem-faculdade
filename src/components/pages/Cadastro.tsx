@@ -32,7 +32,7 @@ export default function Cadastro() {
         ))}
 
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/prototipagem-faculdade/")}
           className="w-full mt-5 h-10 bg-[#2ecc40] text-white rounded-md text-md font-semibold hover:bg-[#27b537] active:scale-95 transition"
         >
           Criar conta

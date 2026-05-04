@@ -48,7 +48,7 @@ export default function Login({ setAdmin }: { setAdmin: (v: boolean) => void }) 
               setAdmin(false);
             }
 
-            navigate("/");
+            navigate("/prototipagem-faculdade/");
           }}
             className="h-8 px-5 bg-[#2ecc40] text-white font-semibold rounded hover:bg-[#27b537] active:scale-95"
           >
@@ -56,7 +56,7 @@ export default function Login({ setAdmin }: { setAdmin: (v: boolean) => void }) 
           </button>
 
           <button
-            onClick={() => navigate("/cadastro")}
+            onClick={() => navigate("/prototipagem-faculdade/cadastro")}
             className="h-8 px-5 bg-[#2ecc40] text-white font-semibold rounded hover:bg-[#27b537] active:scale-95"
           >
             Criar conta

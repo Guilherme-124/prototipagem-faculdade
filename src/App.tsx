@@ -20,14 +20,14 @@ function App() {
       <Sidebar admin={admin}/>
 
       <Routes>
-        <Route path='/' element={<Home admin={admin}/>}/>
-        <Route path='/reunioesdia' element={<ReunioesDia/>}/>
-        <Route path='/reuniaosemana' element={<ReunioesSemana/>}/>
-        <Route path='/perfil' element={<Perfil/>}/>
-        <Route path='/perfiledit' element={<PerfilEdit/>}/>
-        <Route path='/login' element={<Login setAdmin={setAdmin}/>}/>
-        <Route path='/cadastro' element={<Cadastro/>}/>
-        <Route path='/novaSala' element={<NewRoom />}/>
+        <Route path='/prototipagem-faculdade/' element={<Home admin={admin}/>}/>
+        <Route path='/prototipagem-faculdade/reunioesdia' element={<ReunioesDia/>}/>
+        <Route path='/prototipagem-faculdade/reuniaosemana' element={<ReunioesSemana/>}/>
+        <Route path='/prototipagem-faculdade/perfil' element={<Perfil/>}/>
+        <Route path='/prototipagem-faculdade/perfiledit' element={<PerfilEdit/>}/>
+        <Route path='/prototipagem-faculdade/login' element={<Login setAdmin={setAdmin}/>}/>
+        <Route path='/prototipagem-faculdade/cadastro' element={<Cadastro/>}/>
+        <Route path='/prototipagem-faculdade/novaSala' element={<NewRoom />}/>
       </Routes>
     </div>
   );

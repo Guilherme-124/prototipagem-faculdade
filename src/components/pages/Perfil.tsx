@@ -35,14 +35,14 @@ export default function Perfil() {
         {/* Buttons */}
         <div className="flex gap-4">
           <button
-            onClick={() => navigate("/perfiledit")}
+            onClick={() => navigate("/prototipagem-faculdade/perfiledit")}
             className="h-8 px-6 border rounded text-[0.78rem] hover:bg-gray-100 active:scale-95"
           >
             Editar
           </button>
 
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/prototipagem-faculdade/login")}
             className="h-8 px-6 border rounded text-red-600 border-red-200 hover:bg-red-50 active:scale-95"
           >
             Sair

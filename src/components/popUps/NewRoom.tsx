@@ -27,14 +27,14 @@ function NewRoom() {
             onChange={(e) => setRoomName(e.target.value)}
           />
           <div className="flex w-full justify-between">
-            <NavLink to={"/"}>
+            <NavLink to={"/prototipagem-faculdade/"}>
               <Button 
                 className="px-3 py-1 hover:bg-gray-400 bg-gray-300 text-gray-800 hover:text-gray-100"
               >
                 Salvar
               </Button>
             </NavLink>
-            <NavLink to={"/"}>
+            <NavLink to={"/prototipagem-faculdade/"}>
               <Button 
                 className="px-3 py-1 hover:bg-gray-400 bg-gray-300 text-gray-800 hover:text-gray-100"
               >

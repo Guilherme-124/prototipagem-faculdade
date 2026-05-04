@@ -2,7 +2,6 @@ import SidebarMain, { SidebarSection, SidebarItem } from './SidebarProps';
 import { 
   SquareKanban,
   FolderPlus,
-  SquarePlus,
   ShieldUser,
   CalendarDays,
   Calendar1,
@@ -19,19 +18,19 @@ function Sidebar({ admin }: { admin: boolean }) {
     <div className='sidebar z-1000'>
       <SidebarMain>
         <div className='section'>
-          <NavLink to={"/"}>
+          <NavLink to={"/prototipagem-faculdade/"}>
             <SidebarItem 
               icon={<CalendarDays size={20} strokeWidth={1} />}
               text="Home"
             />            
           </NavLink>
-          <NavLink to={"/reunioesdia"}>
+          <NavLink to={"/prototipagem-faculdade/reunioesdia"}>
             <SidebarItem 
               icon={<Calendar1 size={20} strokeWidth={1}/>}
               text="Reuniões do dia"
             />            
           </NavLink>
-          <NavLink to={"/reuniaosemana"}>
+          <NavLink to={"/prototipagem-faculdade/reuniaosemana"}>
             <SidebarItem
               icon={<SquareKanban size={20} strokeWidth={1} />}
               text="Reuniões da semana"
@@ -43,11 +42,7 @@ function Sidebar({ admin }: { admin: boolean }) {
             text="Área de usuário"
             icon={<CloudCog size={20} strokeWidth={1}/>}
           />
-          <SidebarItem
-            icon={<SquarePlus size={20} strokeWidth={1} />}
-            text="Nova Reunião"
-          />
-          <NavLink to={"/perfil"}>
+          <NavLink to={"/prototipagem-faculdade/perfil"}>
             <SidebarItem
               icon={<UserRound size={20} strokeWidth={1} />}
               text="Perfil"
@@ -60,7 +55,7 @@ function Sidebar({ admin }: { admin: boolean }) {
               icon={<ShieldUser size={20} strokeWidth={1} />}
               text="Admin"
             />
-            <NavLink to={"/novaSala"}>
+            <NavLink to={"/prototipagem-faculdade/novaSala"}>
               <SidebarItem 
                 icon={<FolderPlus size={20} strokeWidth={1} />}
                 text="Nova Sala"
