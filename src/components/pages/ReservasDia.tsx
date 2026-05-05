@@ -12,7 +12,7 @@ function ReunioesDia() {
   const reservas = useState(true);
   const [onlyPriority, setOnlyPriority] = useState(false);
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date());
-  const [filterSala, setFilterSala] = useState("");
+  const [filterTitle, setFilterTitle] = useState("");
   const [filterTime, setFilterTime] = useState("");
   const [modalType, setModalType] = useState<"new" | "edit" | null>(null);
   const [openNavigate, setOpenNavigate] = useState(false);
@@ -64,8 +64,8 @@ function ReunioesDia() {
               <Input 
                 placeholder="Filtrar sala" 
                 className="w-80 mb-2"
-                value={filterSala}
-                onChange={(e) => setFilterSala(e.target.value)}
+                value={filterTitle}
+                onChange={(e) => setFilterTitle(e.target.value)}
               />
               <Input 
                 placeholder="Filtrar horário" 
@@ -174,9 +174,9 @@ function ReunioesDia() {
                           const matchesPriority =
                             !onlyPriority || r.priority === true;
 
-                          const matchesSala =
-                            filterSala === "" ||
-                            r.sala.toLowerCase().includes(filterSala.toLowerCase());
+                          const matchesTitle =
+                            filterTitle === "" ||
+                            r.title.toLowerCase().includes(filterTitle.toLowerCase());
 
                           const matchesTimeInput =
                             filterTime === "" ||
@@ -187,7 +187,7 @@ function ReunioesDia() {
                             sameDay &&
                             sameTime &&
                             matchesPriority &&
-                            matchesSala &&
+                            matchesTitle &&
                             matchesTimeInput
                           );
                         });
