@@ -10,7 +10,7 @@ function Navigation() {
       >
         <div className="flex flex-col">
 
-          <NavLink to={"/prototipagem-faculdade/"}
+          <NavLink to={"/prototipagem-faculdade/home"}
             className="px-4 py-2 text-left hover:bg-gray-100"
           >
             <button>

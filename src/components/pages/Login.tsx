@@ -48,7 +48,7 @@ export default function Login({ setAdmin }: { setAdmin: (v: boolean) => void }) 
               setAdmin(false);
             }
 
-            navigate("/prototipagem-faculdade/");
+            navigate("/prototipagem-faculdade/home");
           }}
             className="h-8 px-5 bg-[#2ecc40] text-white font-semibold rounded hover:bg-[#27b537] active:scale-95"
           >

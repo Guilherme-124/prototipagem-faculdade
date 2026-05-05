@@ -18,7 +18,7 @@ function Sidebar({ admin }: { admin: boolean }) {
     <div className='sidebar z-1000'>
       <SidebarMain>
         <div className='section'>
-          <NavLink to={"/prototipagem-faculdade/"}>
+          <NavLink to={"/prototipagem-faculdade/home"}>
             <SidebarItem 
               icon={<CalendarDays size={20} strokeWidth={1} />}
               text="Home"

@@ -20,7 +20,9 @@ function App() {
       <Sidebar admin={admin}/>
 
       <Routes>
-        <Route path='/prototipagem-faculdade/' element={<Home admin={admin}/>}/>
+        {/** coisinha chata pra fazer o gh-pages começar no login */}
+        <Route path='/prototipagem-faculdade/' element={<Login setAdmin={setAdmin}/>}/>
+        <Route path='/prototipagem-faculdade/home' element={<Home admin={admin}/>}/>
         <Route path='/prototipagem-faculdade/reunioesdia' element={<ReunioesDia/>}/>
         <Route path='/prototipagem-faculdade/reuniaosemana' element={<ReunioesSemana/>}/>
         <Route path='/prototipagem-faculdade/perfil' element={<Perfil/>}/>

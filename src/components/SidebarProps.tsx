@@ -92,7 +92,7 @@ export default function Sidebar({children}: SidebarProps) {
             <div className={`mx-[5px] py-2 flex top-0 bg-white justify-between
               border-b border-gray-400 overflow-hidden`}
             >
-              <NavLink to={"/prototipagem-faculdade/"}>
+              <NavLink to={"/prototipagem-faculdade/home"}>
                 <div className="flex items-center cursor-pointer">
                   <div className="font-bold">
                     RBA
