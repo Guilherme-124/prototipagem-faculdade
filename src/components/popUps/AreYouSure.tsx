@@ -20,7 +20,7 @@ function ExcludeReservationPopUp({ onClose }: { onClose: () => void }) {
         <div className="flex w-full justify-between">
           <Button 
             className="px-8 py-1"
-            onClick={() => navigate(0)}
+            onClick={() => onClose()}
           >
             Sim
           </Button>
