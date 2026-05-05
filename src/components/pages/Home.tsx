@@ -161,7 +161,7 @@ function Home({ admin }: { admin: boolean }) {
             >
               {reservasDoDia.length === 0 ? (
                 <div className="h-full flex items-center justify-center text-gray-500 font-semibold">
-                  <h1>No Reservations Today</h1>
+                  <h1>Sem reservas na data selecionada</h1>
                 </div>
               ) :times.map((time) => {
                 const reservasNoHorario = reservasDoDia.filter(
@@ -285,7 +285,7 @@ function Home({ admin }: { admin: boolean }) {
               ) : (
                 <div className="flex-1">
                   <h1 className="font-semibold text-3xl">
-                    Nome Da Empresa
+                    RBA Comunicações
                   </h1>
                 </div>
               )}

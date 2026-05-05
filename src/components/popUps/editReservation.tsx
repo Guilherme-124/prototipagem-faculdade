@@ -2,7 +2,7 @@ import { Input } from "@base-ui/react/input";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
 import SearchPeople from "./SearchPeople";
-import ExcludeReservationPopUp from "./AreYouSure";
+import ExcludeReservationPopUp from "./ExcludeReservationPopUp";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Calendar } from "../ui/calendar";
 
@@ -40,7 +40,13 @@ function EditReservation({ reserva, onClose }: Props) {
   return (
     <>
       {excludeReservation && (
-        <ExcludeReservationPopUp onClose={() => setExcludeReservation(false)}/>
+        <ExcludeReservationPopUp
+          onClose={() => setExcludeReservation(false)}
+          onConfirm={() => {
+            setExcludeReservation(false); // close popup
+            onClose(); // 👈 close EditReservation too
+          }}
+        />
       )}
       <div
         className="fixed flex w-full h-full z-500 bg-black/30 items-center justify-center"

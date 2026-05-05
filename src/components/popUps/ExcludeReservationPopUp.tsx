@@ -1,7 +1,13 @@
 import { Button } from "../ui/button";
 
 
-function ExcludeReservationPopUp({ onClose }: { onClose: () => void }) {
+function ExcludeReservationPopUp({
+  onClose,
+  onConfirm
+}: {
+  onClose: () => void;
+  onConfirm: () => void;
+}) {
 
 
   return (
@@ -18,13 +24,13 @@ function ExcludeReservationPopUp({ onClose }: { onClose: () => void }) {
         <div className="flex w-full justify-between">
           <Button 
             className="px-8 py-1"
-            onClick={() => onClose()}
+            onClick={onConfirm}
           >
             Sim
           </Button>
           <Button 
             className="px-8 py-1"
-            onClick={() => onClose()}
+            onClick={onClose}
           >
             Não
           </Button>

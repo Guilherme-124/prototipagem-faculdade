@@ -2,7 +2,7 @@ import { Input } from "@base-ui/react/input";
 import { Button } from "../ui/button";
 import { useState } from "react";
 import SearchPeople from "./SearchPeople";
-import ExcludeReservationPopUp from "./AreYouSure";
+import ExcludeReservationPopUp from "./ExcludeReservationPopUp";
 
 
 function SearchReservation({ onClose }: { onClose: () => void }) {
@@ -15,7 +15,13 @@ function SearchReservation({ onClose }: { onClose: () => void }) {
   return (
     <>
       {excludeReservation && (
-        <ExcludeReservationPopUp onClose={() => setExcludeReservation(false)}/>
+        <ExcludeReservationPopUp
+          onClose={() => setExcludeReservation(false)}
+          onConfirm={() => {
+            setExcludeReservation(false);
+            onClose();
+          }}
+        />
       )}
       <div
         className="fixed flex w-full h-full z-500 bg-black/30 items-center justify-center"
