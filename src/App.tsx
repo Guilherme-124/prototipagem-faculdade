@@ -22,11 +22,9 @@ function App() {
     "/prototipagem-faculdade/cadastro"
   ];
 
-  const shouldHideSidebar = hideSidebarRoutes.includes(location.pathname);
-
   return (
     <div id='page' className='w-screen h-screen m-0 p-0 flex'>
-      {!shouldHideSidebar && <Sidebar admin={admin} />}
+      {!hideSidebarRoutes.includes(location.pathname) && <Sidebar admin={admin} />}
 
       <Routes>
         {/** coisinha chata pra fazer o gh-pages começar no login */}
