@@ -62,7 +62,7 @@ function ReunioesDia() {
               className='p-5 flex flex-col items-center w-full'
             >
               <Input 
-                placeholder="Filtrar sala" 
+                placeholder="Procurar Reserva" 
                 className="w-80 mb-2"
                 value={filterTitle}
                 onChange={(e) => setFilterTitle(e.target.value)}
