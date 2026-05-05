@@ -2,7 +2,7 @@ import Sidebar from './components/Sidebar';
 import Home from "@/components/pages/Home"
 import ReunioesDia from "@/components/pages/ReservasDia"
 import ReunioesSemana from '@/components/pages/ReservasSemana';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Perfil from './components/pages/Perfil';
 import PerfilEdit from './components/pages/PerfilEdit';
 import Login from './components/pages/Login';
@@ -14,10 +14,19 @@ import { useState } from 'react';
 
 function App() {
   const [admin, setAdmin] = useState(false);
+  const location = useLocation();
+
+  const hideSidebarRoutes = [
+    "/prototipagem-faculdade/",
+    "/prototipagem-faculdade/login",
+    "/prototipagem-faculdade/cadastro"
+  ];
+
+  const shouldHideSidebar = hideSidebarRoutes.includes(location.pathname);
 
   return (
     <div id='page' className='w-screen h-screen m-0 p-0 flex'>
-      <Sidebar admin={admin}/>
+      {!shouldHideSidebar && <Sidebar admin={admin} />}
 
       <Routes>
         {/** coisinha chata pra fazer o gh-pages começar no login */}
