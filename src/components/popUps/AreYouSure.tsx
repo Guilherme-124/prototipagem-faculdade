@@ -1,9 +1,7 @@
 import { Button } from "../ui/button";
-import { useNavigate } from "react-router-dom";
 
 
 function ExcludeReservationPopUp({ onClose }: { onClose: () => void }) {
-  const navigate = useNavigate();
 
 
   return (
