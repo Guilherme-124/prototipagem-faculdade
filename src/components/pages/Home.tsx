@@ -314,7 +314,7 @@ function Home({ admin }: { admin: boolean }) {
               className="flex items-center justify-between mx-6 text-lg"
             >
               <h1 className="font-semibold text-3xl">
-                Nome Da Empresa
+                RBA Comunicações
               </h1>
               <div className="relative">
                 <button
