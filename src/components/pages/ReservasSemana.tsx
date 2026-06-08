@@ -18,10 +18,10 @@ function ReunioesSemana() {
   };
 
   const reservasData: Reserva[] = [
-    { day: new Date(2026, 4, 4, 10, 0), sala: "Sala 1", title: "Reserva 1" },
-    { day: new Date(2026, 4, 4, 10, 0), sala: "Sala 2", title: "Reserva 2" },
-    { day: new Date(2026, 4, 4, 10, 0), sala: "Sala 3", title: "Reserva 3", priority: true },
-    { day: new Date(2026, 4, 8, 13, 0), sala: "Sala 2", title: "Reserva 4" },
+    { day: new Date(2026, 5, 8, 10, 0), sala: "Sala 1", title: "Reserva 1" },
+    { day: new Date(2026, 5, 8, 10, 0), sala: "Sala 2", title: "Reserva 2" },
+    { day: new Date(2026, 5, 8, 10, 0), sala: "Sala 3", title: "Reserva 3", priority: true },
+    { day: new Date(2026, 5, 12, 13, 0), sala: "Sala 2", title: "Reserva 4" },
   ];
 
   const today = new Date();
